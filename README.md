@@ -1,2 +1,2 @@
 # MuscleMaxxing
-Your ultimate guide to training every muscle group effectively.
+Your ultimate guide to training every muscle group effectively
