@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "sans-serif";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+main {
+    background-color: #EEEEEE;
+}
+
+.benefits ul {
+    display: flex;
+    gap:15px;
+    align-items: center;
+    align-self: center;
+}
+.benefits ul li {
+    list-style: none;
+    border: 0.8px solid;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+
+}
+.benefits ul li:hover {
+    background-color: rgb(0,0,0,0.1);
+    border: 0.5px solid black;
+    transform: scale(1.08);
+}
+
+
+.intro {
+    text-align: center;
+    padding: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 7px;
+
+}
+
+.intro h1 {
+    color: #0C1844;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+
+.benefits {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.benefits h2 {
+    color: #C80036;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.benefits ul {
+    list-style-type: square;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+    padding: 0;
+}
+
+.benefits li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.workouts {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.workouts .workout-list a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.workouts h2 {
+    color: #C80036;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.workout-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.workout {
+    padding: 1.5rem;
+    border: 1px solid lightgrey;
+    background: linear-gradient(to bottom, rgb(255,255,255,0.15), rgb(0,0,0,0.15));
+    border-radius: 8px;
+    max-width: 280px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.workout:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.workout img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.workout p{
+    color:rgb(0, 0, 0);
+}
+
+.workout h3 {
+    color: #C80036;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Tips Section */
+.tips {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.tips h2 {
+    color: #C80036;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tips p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.resources {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.resources h2{
+    color: #C80036;
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources li {
+    margin: 0.5rem 0;
+}
+
+.resources a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.resources a:hover {
+    color: #ff9900;
+}
+#contact p{
+    text-align: center;
+}
+

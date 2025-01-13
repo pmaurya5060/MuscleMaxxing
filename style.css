@@ -1,0 +1,262 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+html{
+    scroll-behavior: smooth;
+}
+select{
+    border: none;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.hero {
+    text-align: center;
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    text-shadow: 5px 4px 4px rgb(11 11 11);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero .cta {
+    display: inline-block;
+    background-color: #ff9900;
+    color: white;
+    padding: 1.5rem 3rem;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.hero .cta:hover {
+    background-color: #cc7a00;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.feature {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 300px;
+    border: 2px solid rgb(101, 100, 100)
+}
+
+.feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.resources {
+    text-align: center;
+    padding: 2rem;
+}
+
+.resources h2 {
+    margin-bottom: 1rem;
+}
+
+.resource-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.resource-links a:hover {
+    background-color: #ff9900;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+#contact p {
+    text-align: center;
+    font-size: 15px;
+}
+.social-links{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+.social-links img {
+    width: 24px;
+    height: 24px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa:hover {
+    opacity: 0.8;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background-color: #e04e99;
+    color: #ddd;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  ul {
+    list-style-type: none;
+  }
+
+
+main {
+    background-image: url("https://advancedbodymetrics.com/wp-content/uploads/2024/02/best-5-day-workout-spli-for-muscle-and-fitness.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backdrop-filter: blur(10px); */
+}
+
+.features a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block;
+}
+
+.feature {
+    text-align: center; 
+    background: #ffffff; 
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s; 
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px; 
+}
+
+.feature h3 {
+    font-size: 1.2rem;  
+    margin-bottom: 5px
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    border-color: #ff9900;
+}
+
+
